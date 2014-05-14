@@ -44,4 +44,9 @@ Contribution
 
 Feel free to contribute to this project and send me any pull request. Perhaps performance improvements, debate defaults screen sizes or even port a version that doesn't require jQuery!
 
+Licence
+-------
+
+MIT
+
 [Here]:http://smasala.github.io/responsive-images-js/demo.html
