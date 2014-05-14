@@ -27,8 +27,11 @@ Couldn't be any easy to use
 Demo
 ----
 
-[demo]
+[Here]
 
+Contribution
+------------
 
+Feel free to contribute to this project and send me any pull request. Perhaps performance improvements or even a version that doesn't require jQuery!
 
-[demo]:http://smasala.github.io/responsive-images-js/demo.html
+[Here]:http://smasala.github.io/responsive-images-js/demo.html
