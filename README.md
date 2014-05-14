@@ -29,8 +29,8 @@ Current predefined sizes:
 
 		xs:"only screen and (max-width : 767px)",
 		s:"only screen and (min-width : 768px)",
-		m:"only screen and (min-width : 1024px)",
-		l:"only screen and (min-width : 1824px)",
+		m:"only screen and (min-width : 1025px)",
+		l:"only screen and (min-width : 1441px)",
 		xl:"only screen and (min-width : 1921px)"
 
 
