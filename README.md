@@ -27,7 +27,7 @@ Couldn't be any easy to use
 Current predefined sizes:
 
 
-		xs:"only screen and (max-width : 480px)",
+		xs:"only screen and (max-width : 767px)",
 		s:"only screen and (min-width : 768px)",
 		m:"only screen and (min-width : 1224px)",
 		l:"only screen and (min-width : 1824px)",
