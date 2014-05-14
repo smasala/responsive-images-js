@@ -27,10 +27,10 @@ Couldn't be any easy to use
 Current predefined sizes:
 
 
-		xs:"only screen and (max-width : 767px)",
-		s:"only screen and (min-width : 768px)",
-		m:"only screen and (min-width : 1025px)",
-		l:"only screen and (min-width : 1441px)",
+		xs:"only screen and (max-width : 480px)",
+		s:"only screen and (min-width : 481px)",
+		m:"only screen and (min-width : 768px)",
+		l:"only screen and (min-width : 1280px)",
 		xl:"only screen and (min-width : 1921px)"
 
 
@@ -42,6 +42,6 @@ Demo
 Contribution
 ------------
 
-Feel free to contribute to this project and send me any pull request. Perhaps performance improvements or even a version that doesn't require jQuery!
+Feel free to contribute to this project and send me any pull request. Perhaps performance improvements, debate defaults screen sizes or even port a version that doesn't require jQuery!
 
 [Here]:http://smasala.github.io/responsive-images-js/demo.html
