@@ -26,11 +26,12 @@ $(document).ready(function(){
 		return;
 	}
 
+	//what sizes should be considered default?
 	var defaultSizes = {
-		xs:"only screen and (max-width : 767px)",
-		s:"only screen and (min-width : 768px)",
-		m:"only screen and (min-width : 1024px)",
-		l:"only screen and (min-width : 1824px)",
+		xs:"only screen and (max-width : 480px)",
+		s:"only screen and (min-width : 481px)",
+		m:"only screen and (min-width : 768px)",
+		l:"only screen and (min-width : 1280px)",
 		xl:"only screen and (min-width : 1921px)"
 	}
 
