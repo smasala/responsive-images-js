@@ -24,6 +24,16 @@ Couldn't be any easy to use
 * data-sizes: allows predefined sizes or actual css media queries.
 * data-srcset: comma separated urls that are to be used in the same order as data-sizes
 
+Current predefined sizes:
+
+
+		xs:"only screen and (max-width : 480px)",
+		s:"only screen and (min-width : 768px)",
+		m:"only screen and (min-width : 1224px)",
+		l:"only screen and (min-width : 1824px)",
+		xl:"only screen and (min-width : 1921px)"
+
+
 Demo
 ----
 
