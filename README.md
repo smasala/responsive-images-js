@@ -31,4 +31,4 @@ Demo
 
 
 
-[demo]:demo.html
+[demo]:http://smasala.github.io/responsive-images-js/demo.html
