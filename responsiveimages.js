@@ -29,7 +29,7 @@ window.ResponsiveImagesJS = new (function(window, document, defaultSizes){
 		return;
 	};
 
-	me.version = "0.3"
+	me.version = "0.3";
 
 	me.update = function(){
 		var images = $("img[data-sizes][data-srcset]");	//find all images tags we can use
