@@ -22,7 +22,7 @@ Note: data-sizes accepts predefined sizes or complete CSS media queries and the 
 $(document).ready(function(){
 
 	if(typeof window.matchMedia == "undefined"){
-		console.error("mediaMatch is required to run ResponsiveImagesJS")
+		console.error("matchMedia is required to run ResponsiveImagesJS")
 		return;
 	}
 
