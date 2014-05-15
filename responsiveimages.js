@@ -19,23 +19,17 @@ Note: data-sizes accepts predefined sizes or complete CSS media queries and the 
 
 	
 */
-$(document).ready(function(){
+
+window.ResponsiveImagesJS = new (function(window, document, defaultSizes){
+	
+	var me = this;
 
 	if(typeof window.matchMedia == "undefined"){
-		console.error("matchMedia is required to run ResponsiveImagesJS")
+		console.error("matchMedia is required to run ResponsiveImagesJS");
 		return;
-	}
+	};
 
-	//what sizes should be considered default?
-	var defaultSizes = {
-		xs:"only screen and (max-width : 480px)",
-		s:"only screen and (min-width : 481px)",
-		m:"only screen and (min-width : 768px)",
-		l:"only screen and (min-width : 1280px)",
-		xl:"only screen and (min-width : 1921px)"
-	}
-
-	var responsive = function(){
+	this.update = function(){
 		var images = $("img[data-sizes][data-srcset]");	//find all images tags we can use
 		var sizes, s, img, srcs, siz;
 		for(var i = 0, l = images.length; i<l; i++){
@@ -50,12 +44,20 @@ $(document).ready(function(){
 				}
 			}
 		}
-	}
+	};
 	
 	//init start
-	responsive();
+	$(document).ready(function(){
+		me.update();
+	});
 	
 	//on window resize
-	$(window).resize(responsive);
+	$(window).resize(me.update);
 
+})(this, this.document, {
+	xs:"only screen and (max-width : 480px)",
+	s:"only screen and (min-width : 481px)",
+	m:"only screen and (min-width : 768px)",
+	l:"only screen and (min-width : 1280px)",
+	xl:"only screen and (min-width : 1921px)"
 });
