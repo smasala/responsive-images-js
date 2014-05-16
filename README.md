@@ -34,10 +34,9 @@ Current predefined sizes:
 		xl:"only screen and (min-width : 1921px)"
 
 
-Demo
+[Demo]
 ----
 
-[Here]
 
 Contribution
 ------------
@@ -49,4 +48,4 @@ Licence
 
 MIT
 
-[Here]:http://smasala.github.io/responsive-images-js/demo.html
+[Demo]:http://smasala.github.io/responsive-images-js/demo.html
