@@ -1,5 +1,7 @@
 /*
 Author: Steven Masala
+Twitter: @StevenMasala
+Github: https://github.com/smasala/responsive-images-js
 Licence: MIT https://tldrlegal.com/license/mit-license
 Responsive Images JS
 Browser compatibility: Modern browsers & IE10+. For IE9 please include matchMedia by Paul Irish.
