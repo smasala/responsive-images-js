@@ -23,7 +23,7 @@ Note: data-sizes accepts predefined sizes or complete CSS media queries and the 
 	
 */
 
-window.ResponsiveImagesJS = new (function(window, document, defaultSizes){
+window.ResponsiveImagesJS = new (function(window, document, $, defaultSizes){
 	
 	var me = this;
 
@@ -59,7 +59,7 @@ window.ResponsiveImagesJS = new (function(window, document, defaultSizes){
 	//on window resize
 	$(window).resize(me.update);
 
-})(this, this.document, {
+})(this, this.document, jQuery, {
 	xs:"only screen and (max-width : 480px)",
 	s:"only screen and (min-width : 481px)",
 	m:"only screen and (min-width : 768px)",
