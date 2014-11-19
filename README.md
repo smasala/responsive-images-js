@@ -8,15 +8,15 @@ Tested with jQuery 2.x, however I don't see why it shouldn't work on earlier ver
 Usage
 -----
 
-Couldn't be any easy to use
+Couldn't be any easy to use (sizes from largest to smallest)
 
-	<img 	data-sizes="xs, s, m, l, xl" 
+	<img 	data-sizes="xl, l, m, s, xs" 
 			data-srcset="
-					http://placehold.it/100x100&text=xs,
-					http://placehold.it/100x100&text=s,
-					http://placehold.it/100x100&text=m,
-					http://placehold.it/100x100&text=l,
-					http://placehold.it/100x100&text=xl
+					http://placehold.it/500x400&text=xl,
+					http://placehold.it/400x300&text=l,
+					http://placehold.it/300x200&text=m,
+					http://placehold.it/200x150&text=s,
+					http://placehold.it/150x100&text=xs
 				"
 	/>
 	
