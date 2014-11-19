@@ -2,9 +2,9 @@
 <html>
 
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Responsive-images-js : Simple jQuery powered function to enable responsive images" />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Responsive-images-js : Simple jQuery powered function to enable responsive images">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -32,24 +32,24 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="responsive-images-js" class="anchor" href="#responsive-images-js"><span class="octicon octicon-link"></span></a>Responsive Images JS</h1>
+<a id="responsive-images-js" class="anchor" href="#responsive-images-js" aria-hidden="true"><span class="octicon octicon-link"></span></a>Responsive Images JS</h1>
 
 <p>Simple jQuery powered function to enable responsive images</p>
 
 <p>Tested with jQuery 2.x, however I don't see why it shouldn't work on earlier versions. Feel free to test and let me know.</p>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>Couldn't be any easy to use</p>
+<p>Couldn't be any easy to use (sizes from largest to smallest)</p>
 
-<pre><code>&lt;img    data-sizes="xs, s, m, l, xl" 
+<pre><code>&lt;img    data-sizes="xl, l, m, s, xs" 
         data-srcset="
-                http://placehold.it/100x100&amp;text=xs,
-                http://placehold.it/100x100&amp;text=s,
-                http://placehold.it/100x100&amp;text=m,
-                http://placehold.it/100x100&amp;text=l,
-                http://placehold.it/100x100&amp;text=xl
+                http://placehold.it/500x400&amp;text=xl,
+                http://placehold.it/400x300&amp;text=l,
+                http://placehold.it/300x200&amp;text=m,
+                http://placehold.it/200x150&amp;text=s,
+                http://placehold.it/150x100&amp;text=xs
             "
 /&gt;
 </code></pre>
@@ -57,7 +57,9 @@
 <ul>
 <li>data-sizes: allows predefined sizes or actual css media queries.</li>
 <li>data-srcset: comma separated urls that are to be used in the same order as data-sizes</li>
-</ul><p>Current predefined sizes:</p>
+</ul>
+
+<p>Current predefined sizes:</p>
 
 <pre><code>    xs:"only screen and (max-width : 480px)",
     s:"only screen and (min-width : 481px)",
@@ -67,16 +69,16 @@
 </code></pre>
 
 <h2>
-<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a><a href="http://smasala.github.io/responsive-images-js/demo.html">Demo</a>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://smasala.github.io/responsive-images-js/demo.html">Demo</a>
 </h2>
 
 <h2>
-<a name="contribution" class="anchor" href="#contribution"><span class="octicon octicon-link"></span></a>Contribution</h2>
+<a id="contribution" class="anchor" href="#contribution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contribution</h2>
 
 <p>Feel free to contribute to this project and send me any pull request. Perhaps performance improvements, debate defaults screen sizes or even port a version that doesn't require jQuery!</p>
 
 <h2>
-<a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>Licence</h2>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span class="octicon octicon-link"></span></a>Licence</h2>
 
 <p>MIT</p>
       </section>
