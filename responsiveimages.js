@@ -1,20 +1,19 @@
-/*
-Author: Steven Masala
-Twitter: @StevenMasala
+/*!
+@author Steven Masala [me@smasala.com]
 Github: https://github.com/smasala/responsive-images-js
-Licence: MIT https://tldrlegal.com/license/mit-license
-Version: 0.3
+@license: MIT https://tldrlegal.com/license/mit-license
+@version: 0.3
 Responsive Images JS
 Browser compatibility: Modern browsers & IE10+. For IE9 please include matchMedia by Paul Irish.
-usage:
+usage (sizes biggest to smallest):
 
-	<img 	data-sizes="xs, s, m, l, xl" 
+	<img 	data-sizes="xl, l, m, s, xs" 
 			data-srcset="
-					http://placehold.it/100x100&text=xs,
-					http://placehold.it/100x100&text=s,
-					http://placehold.it/100x100&text=m,
-					http://placehold.it/100x100&text=l,
-					http://placehold.it/100x100&text=xl
+					http://placehold.it/500x400&text=xl,
+					http://placehold.it/400x300&text=l,
+					http://placehold.it/300x200&text=m,
+					http://placehold.it/200x150&text=s,
+					http://placehold.it/150x100&text=xs
 				"
 	/>
 
@@ -45,7 +44,9 @@ window.ResponsiveImagesJS = new (function(window, document, $, defaultSizes){
 				siz = sizes[ii].trim();
 				s = defaultSizes[siz] || siz;	//either a predefined size is used a custom media query
 				if(window.matchMedia(s).matches){
-					img.attr("src", srcs[ii].trim());
+					//last match wins 
+					img.attr("src", srcs[ii].trim());	
+					break;
 				}
 			}
 		}
