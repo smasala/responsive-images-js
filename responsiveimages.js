@@ -44,7 +44,7 @@ window.ResponsiveImagesJS = new (function(window, document, $, defaultSizes){
 				siz = sizes[ii].trim();
 				s = defaultSizes[siz] || siz;	//either a predefined size is used a custom media query
 				if(window.matchMedia(s).matches){
-					//last match wins 
+					//first match wins 
 					img.attr("src", srcs[ii].trim());	
 					break;
 				}
