@@ -1,0 +1,19 @@
+{
+	"name": "responsive-images",
+	"description": "JavaScript solution for supporting responsive images",
+	"main": "responsiveimages.js",
+	"ignore": "",
+	"authors": [
+		"Steven Masala"
+	],
+	"keywords" : [ 
+		"responsive",
+		"images",
+		"javascript",
+		"jquery"
+	],
+	"version": "1.0.0",
+	"dependencies": {
+		"jquery": "latest"
+	}
+}
