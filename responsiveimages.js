@@ -33,8 +33,12 @@ window.ResponsiveImagesJS = new (function(window, document, $, defaultSizes){
 
 	me.version = "1.0.0";
 
-	me.update = function(){
-		var images = $("img[data-sizes][data-srcset]");	//find all images tags we can use
+	/**
+	 * @method update
+	 * @param id {String} optional - to update image for a given id
+	 */
+	me.update = function(id){
+		var images = $("img"+(id?"#"+id:"")+"[data-sizes][data-srcset]");	//find all images tags we can use
 		var sizes, s, img, srcs, siz;
 		for(var i = 0, l = images.length; i<l; i++){
 			img = $(images[i]);
