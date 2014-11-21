@@ -2,7 +2,7 @@
 @author Steven Masala [me@smasala.com]
 Github: https://github.com/smasala/responsive-images-js
 @license: MIT https://tldrlegal.com/license/mit-license
-@version: 1.0.0
+@version: 1.0.1
 Responsive Images JS
 Browser compatibility: Modern browsers & IE10+. For IE9 please include matchMedia by Paul Irish.
 usage (sizes biggest to smallest):
@@ -31,7 +31,7 @@ window.ResponsiveImagesJS = new (function(window, document, $, defaultSizes){
 		return;
 	};
 
-	me.version = "1.0.0";
+	me.version = "1.0.1";
 
 	/**
 	 * @method update
