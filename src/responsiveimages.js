@@ -2,7 +2,7 @@
 @author Steven Masala [me@smasala.com]
 Github: https://github.com/smasala/responsive-images-js
 @license: MIT https://tldrlegal.com/license/mit-license
-@version: 1.0.2
+@version: 1.0.3
 Responsive Images JS
 Browser compatibility: Modern browsers & IE10+. For IE9 please include matchMedia by Paul Irish.
 usage (sizes biggest to smallest):
@@ -53,7 +53,7 @@ Note: data-sizes accepts predefined sizes or complete CSS media queries and the 
 				xl:"only screen and (min-width : 1921px)"
 			};
 		
-		me.version = "1.0.2";
+		me.version = "1.0.3";
 
 		/**
 		 * @method update
