@@ -1,0 +1,17 @@
+{
+	"name": "responsive-images-js",
+  	"version":"1.0.3",
+  	"description": "Simple jQuery powered function to enable responsive images",
+  	"keywords": [
+	  	"js",
+	  	"reponsive",
+	  	"images",
+	  	"jquery"	  	
+	],
+  	"devDependencies": {},
+  	"repository": {
+  		"type": "git",
+  		"url": "git://github.com/smasala/responsive-images-js.git"
+	},
+  	"license": "MIT"
+}
