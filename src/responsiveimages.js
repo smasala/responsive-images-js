@@ -2,7 +2,7 @@
 @author Steven Masala [me@smasala.com]
 Github: https://github.com/smasala/responsive-images-js
 @license: MIT https://tldrlegal.com/license/mit-license
-@version: 1.0.3
+@version: 1.1.0
 Responsive Images JS
 Browser compatibility: Modern browsers & IE10+. For IE9 please include matchMedia by Paul Irish.
 usage (sizes biggest to smallest):
@@ -14,6 +14,14 @@ usage (sizes biggest to smallest):
 					http://placehold.it/300x200&text=m,
 					http://placehold.it/200x150&text=s,
 					http://placehold.it/150x100&text=xs
+				"
+	/>
+
+	<img 	data-sizes="xl, l, m" 
+			data-srcset="
+					http://placehold.it/500x400&text=xl,
+					http://placehold.it/400x300&text=l,
+					http://placehold.it/300x200&text=m
 				"
 	/>
 
@@ -53,7 +61,7 @@ Note: data-sizes accepts predefined sizes or complete CSS media queries and the 
 				xl:"only screen and (min-width : 1921px)"
 			};
 		
-		me.version = "1.0.3";
+		me.version = "1.1.0";
 
 		/**
 		 * @method update
@@ -62,7 +70,7 @@ Note: data-sizes accepts predefined sizes or complete CSS media queries and the 
 		me.update = function(id){
 			var id = typeof id == "string" ? "#" + id : "",
 					images = $("img"+id+"[data-sizes][data-srcset]");	//find all images tags we can use
-			var sizes, s, img, srcs, siz;
+			var sizes, s, img, srcs, siz, matchFound = false;
 			for(var i = 0, l = images.length; i<l; i++){
 				img = $(images[i]);
 				srcs = img.attr("data-srcset").split(",");
@@ -72,9 +80,13 @@ Note: data-sizes accepts predefined sizes or complete CSS media queries and the 
 					s = defaultSizes[siz] || siz;	//either a predefined size is used a custom media query
 					if(window.matchMedia(s).matches){
 						//first match wins 
+						matchFound = true;
 						img.attr("src", srcs[ii].trim());	
 						break;
 					}
+				}
+				if (!matchFound) {
+					img.attr("src", srcs[sizes.length - 1].trim());
 				}
 			}
 		};

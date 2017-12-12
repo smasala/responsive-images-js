@@ -19,6 +19,13 @@ Couldn't be any easy to use (sizes from largest to smallest)
 					http://placehold.it/150x100&text=xs
 				"
 	/>
+
+	<img 	data-sizes="l, m" 
+			data-srcset="
+					http://placehold.it/400x300&text=l,
+					http://placehold.it/300x200&text=m
+				"
+	/>
 	
 
 * data-sizes: allows predefined sizes or actual css media queries.

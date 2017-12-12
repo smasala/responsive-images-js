@@ -1,7 +1,10 @@
 {
 	"name": "responsive-images-js",
-  	"version":"1.0.3",
-  	"description": "Simple jQuery powered function to enable responsive images",
+  	"version":"1.1.0",
+	"description": "Simple jQuery powered function to enable responsive images",
+	"scripts": {
+		"build": "cd tools && node r.js -o ./build.js"
+	},  
   	"keywords": [
 	  	"js",
 	  	"reponsive",

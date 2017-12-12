@@ -1,3 +1,9 @@
+v1.1.0
+--------------------------
+* Bug fix: when no image is loaded on small device because s or xs where not declared
+now the smallest defined size is chosen.
+* added "npm run build" to simplify build process
+
 v1.0.3 
 --------------------------
 * AMD / RequireJS support
